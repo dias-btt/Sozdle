@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50290F72A5C2F54000D88CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50290F62A5C2F54000D88CC /* AppDelegate.swift */; };
+		F50290F92A5C2F54000D88CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50290F82A5C2F54000D88CC /* SceneDelegate.swift */; };
+		F50290FB2A5C2F54000D88CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50290FA2A5C2F54000D88CC /* ViewController.swift */; };
+		F50290FE2A5C2F54000D88CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50290FC2A5C2F54000D88CC /* Main.storyboard */; };
+		F50291002A5C2F56000D88CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50290FF2A5C2F56000D88CC /* Assets.xcassets */; };
+		F50291032A5C2F56000D88CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50291012A5C2F56000D88CC /* LaunchScreen.storyboard */; };
+		F5097B3B2A5D2F83008C5275 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5097B3A2A5D2F83008C5275 /* KeyboardViewController.swift */; };
+		F5097B3D2A5D2F90008C5275 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5097B3C2A5D2F90008C5275 /* BoardViewController.swift */; };
+		F5097B3F2A5D3462008C5275 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5097B3E2A5D3462008C5275 /* KeyCell.swift */; };
+		F5097B412A5D5384008C5275 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5097B402A5D5384008C5275 /* WelcomeViewController.swift */; };
+		F5097B432A5D786D008C5275 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5097B422A5D786D008C5275 /* MainViewController.swift */; };
+		F525C88F2A650D5800F1E033 /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F525C88E2A650D5800F1E033 /* StatViewController.swift */; };
+		F5A5808E2A5EC40F00A7F0B5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A5808D2A5EC40F00A7F0B5 /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F50290F32A5C2F54000D88CC /* Sozdle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sozdle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50290F62A5C2F54000D88CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50290F82A5C2F54000D88CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F50290FA2A5C2F54000D88CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F50290FD2A5C2F54000D88CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F50290FF2A5C2F56000D88CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F50291022A5C2F56000D88CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F50291042A5C2F56000D88CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5097B3A2A5D2F83008C5275 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F5097B3C2A5D2F90008C5275 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		F5097B3E2A5D3462008C5275 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		F5097B402A5D5384008C5275 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F5097B422A5D786D008C5275 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F525C88E2A650D5800F1E033 /* StatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
+		F5A5808D2A5EC40F00A7F0B5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50290F02A5C2F54000D88CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50290EA2A5C2F53000D88CC = {
+			isa = PBXGroup;
+			children = (
+				F50290F52A5C2F54000D88CC /* Sozdle */,
+				F50290F42A5C2F54000D88CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50290F42A5C2F54000D88CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50290F32A5C2F54000D88CC /* Sozdle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50290F52A5C2F54000D88CC /* Sozdle */ = {
+			isa = PBXGroup;
+			children = (
+				F5097B392A5D2F33008C5275 /* Other */,
+				F5097B382A5D2F2C008C5275 /* Core */,
+				F50291042A5C2F56000D88CC /* Info.plist */,
+			);
+			path = Sozdle;
+			sourceTree = "<group>";
+		};
+		F5097B382A5D2F2C008C5275 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F525C8902A65112B00F1E033 /* GameLogic */,
+				F50290FC2A5C2F54000D88CC /* Main.storyboard */,
+				F5097B402A5D5384008C5275 /* WelcomeViewController.swift */,
+				F5097B422A5D786D008C5275 /* MainViewController.swift */,
+				F5A5808D2A5EC40F00A7F0B5 /* Colors.swift */,
+				F525C88E2A650D5800F1E033 /* StatViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F5097B392A5D2F33008C5275 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F50290F62A5C2F54000D88CC /* AppDelegate.swift */,
+				F50290F82A5C2F54000D88CC /* SceneDelegate.swift */,
+				F50290FF2A5C2F56000D88CC /* Assets.xcassets */,
+				F50291012A5C2F56000D88CC /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F525C8902A65112B00F1E033 /* GameLogic */ = {
+			isa = PBXGroup;
+			children = (
+				F5097B3E2A5D3462008C5275 /* KeyCell.swift */,
+				F5097B3C2A5D2F90008C5275 /* BoardViewController.swift */,
+				F5097B3A2A5D2F83008C5275 /* KeyboardViewController.swift */,
+				F50290FA2A5C2F54000D88CC /* ViewController.swift */,
+			);
+			path = GameLogic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50290F22A5C2F54000D88CC /* Sozdle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50291072A5C2F56000D88CC /* Build configuration list for PBXNativeTarget "Sozdle" */;
+			buildPhases = (
+				F50290EF2A5C2F54000D88CC /* Sources */,
+				F50290F02A5C2F54000D88CC /* Frameworks */,
+				F50290F12A5C2F54000D88CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sozdle;
+			productName = Sozdle;
+			productReference = F50290F32A5C2F54000D88CC /* Sozdle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50290EB2A5C2F53000D88CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F50290F22A5C2F54000D88CC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F50290EE2A5C2F53000D88CC /* Build configuration list for PBXProject "Sozdle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50290EA2A5C2F53000D88CC;
+			productRefGroup = F50290F42A5C2F54000D88CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50290F22A5C2F54000D88CC /* Sozdle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50290F12A5C2F54000D88CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50291032A5C2F56000D88CC /* LaunchScreen.storyboard in Resources */,
+				F50291002A5C2F56000D88CC /* Assets.xcassets in Resources */,
+				F50290FE2A5C2F54000D88CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50290EF2A5C2F54000D88CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50290FB2A5C2F54000D88CC /* ViewController.swift in Sources */,
+				F5A5808E2A5EC40F00A7F0B5 /* Colors.swift in Sources */,
+				F50290F72A5C2F54000D88CC /* AppDelegate.swift in Sources */,
+				F50290F92A5C2F54000D88CC /* SceneDelegate.swift in Sources */,
+				F5097B3F2A5D3462008C5275 /* KeyCell.swift in Sources */,
+				F5097B3B2A5D2F83008C5275 /* KeyboardViewController.swift in Sources */,
+				F5097B3D2A5D2F90008C5275 /* BoardViewController.swift in Sources */,
+				F5097B412A5D5384008C5275 /* WelcomeViewController.swift in Sources */,
+				F525C88F2A650D5800F1E033 /* StatViewController.swift in Sources */,
+				F5097B432A5D786D008C5275 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F50290FC2A5C2F54000D88CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50290FD2A5C2F54000D88CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F50291012A5C2F56000D88CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50291022A5C2F56000D88CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50291052A5C2F56000D88CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F50291062A5C2F56000D88CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50291082A5C2F56000D88CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sozdle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dias.saiynov-nu.edu.kz.Sozdle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50291092A5C2F56000D88CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sozdle/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dias.saiynov-nu.edu.kz.Sozdle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50290EE2A5C2F53000D88CC /* Build configuration list for PBXProject "Sozdle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50291052A5C2F56000D88CC /* Debug */,
+				F50291062A5C2F56000D88CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50291072A5C2F56000D88CC /* Build configuration list for PBXNativeTarget "Sozdle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50291082A5C2F56000D88CC /* Debug */,
+				F50291092A5C2F56000D88CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50290EB2A5C2F53000D88CC /* Project object */;
+}
