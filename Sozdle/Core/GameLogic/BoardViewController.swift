@@ -63,7 +63,8 @@ extension BoardViewController{
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else{
             fatalError()
         }
-        cell.backgroundColor = dataSource?.boxColor(at: indexPath)
+        
+        cell.backgroundColor = self.dataSource?.boxColor(at: indexPath)
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.systemGray3.cgColor
         
@@ -71,7 +72,6 @@ extension BoardViewController{
         if let letter = guesses[indexPath.section][indexPath.row]{
             cell.configure(with: letter)
         }
-        
         return cell
     }
     

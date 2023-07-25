@@ -8,6 +8,8 @@
 import UIKit
 
 protocol KeyboardViewControllerDelegate: AnyObject{
+    func keyboardViewController(_ vc: KeyboardViewController, didTapCheckButton button: UIButton)
+    func keyboardViewController(_ vc: KeyboardViewController, didTapBackspaceButton button: UIButton)
     func keyboardViewController(_ vc: KeyboardViewController, didTapKey letter: Character)
 }
 
@@ -31,9 +33,29 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
         return collectionView
     }()
     
+    let checkButton: UIButton = {
+            let button = UIButton(type: .system)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            button.setTitle("Тексеру", for: .normal)
+            button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+            button.addTarget(self, action: #selector(checkButtonTapped), for: .touchUpInside)
+            return button
+        }()
+    
+    let backspaceButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Жою", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        button.addTarget(self, action: #selector(backspaceButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(collectionView)
+        view.addSubview(checkButton)
+        view.addSubview(backspaceButton)
         collectionView.delegate = self
         collectionView.dataSource = self
         NSLayoutConstraint.activate([
@@ -41,6 +63,16 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            backspaceButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 180),
+            backspaceButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            backspaceButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 1),
+            backspaceButton.heightAnchor.constraint(equalToConstant: 40),
+            
+            checkButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -100),
+            checkButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            checkButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            checkButton.heightAnchor.constraint(equalToConstant: 40)
         ])
         
         for rows in letters{
@@ -49,6 +81,12 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegateFlowLayo
         }
     }
 
+    @objc func checkButtonTapped() {
+            delegate?.keyboardViewController(self, didTapCheckButton: checkButton)
+    }
+    @objc func backspaceButtonTapped() {
+        delegate?.keyboardViewController(self, didTapBackspaceButton: backspaceButton)
+    }
 }
 
 extension KeyboardViewController{
@@ -67,7 +105,9 @@ extension KeyboardViewController{
         }
         let letter = keys[indexPath.section][indexPath.row]
         cell.configure(with: letter)
-        cell.backgroundColor = UIColor.systemGray3
+        cell.backgroundColor = Colors.darkTheme
+        cell.layer.borderWidth = 1.0
+        cell.layer.borderColor = UIColor.systemGray3.cgColor
         return cell
     }
     

@@ -13,7 +13,7 @@ class KeyCell: UICollectionViewCell {
     let label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
+        label.textColor = Colors.darkText
         label.textAlignment = .center
         label.font = .systemFont(ofSize: 18, weight: .medium)
         
